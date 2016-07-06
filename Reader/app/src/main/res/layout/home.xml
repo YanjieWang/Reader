@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/ll_top"
+        android:layout_y="-40dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="bottom|center">
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:id="@+id/iv_top"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:scaleType="fitXY"
+            android:clickable="false" />
+
+        <TextView
+            android:gravity="center|bottom"
+            android:id="@+id/tv_top"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:clickable="false"
+            android:text="下拉刷新"
+            android:textSize="18sp"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ListView
+                android:choiceMode="singleChoice"
+                android:id="@+id/lv_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </ListView>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/ll_botom"
+            android:layout_width="match_parent"
+            android:layout_gravity="center|bottom"
+            android:layout_height="40dp"
+            android:visibility="invisible"
+            android:gravity="bottom|center">
+            <ImageView
+                android:layout_marginLeft="20dp"
+                android:id="@+id/iv_botom"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/refresh_32x32"
+                android:scaleType="fitXY"
+                android:clickable="false"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:gravity="center|bottom"
+                android:id="@+id/tv_botom"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:clickable="false"
+                android:text="正在加载"
+                android:textSize="18sp"/>
+        </LinearLayout>
+    </FrameLayout>
+</AbsoluteLayout>

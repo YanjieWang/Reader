@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/sort_back">
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ff555555">
+            <RadioGroup
+                android:orientation="horizontal"
+                android:id="@+id/rg_sort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </RadioGroup>
+        </HorizontalScrollView>
+        <ListView
+            android:id="@+id/lv_sort"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/ll_botom"
+        android:layout_width="match_parent"
+        android:layout_gravity="center|bottom"
+        android:layout_height="40dp"
+        android:visibility="invisible"
+        android:gravity="bottom|center">
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:id="@+id/iv_botom"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/refresh_32x32"
+            android:scaleType="fitXY"
+            android:clickable="false"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:gravity="center|bottom"
+            android:id="@+id/tv_botom"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:clickable="false"
+            android:text="正在加载"
+            android:textSize="18sp"/>
+    </LinearLayout>
+</FrameLayout>

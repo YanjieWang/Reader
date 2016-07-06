@@ -1,0 +1,18 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="leftwith">
+        <item name="android:layout_width">260dp</item>
+    </style>
+    <style name="leftbutton" parent="@style/leftwith">
+        <item name="android:textSize">17sp</item>
+        <item name="android:layout_height">44dp</item>
+    </style>
+
+</resources>

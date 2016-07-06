@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:addStatesFromChildren="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <GridView
+        android:id="@+id/gview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="auto_fit"
+        android:columnWidth="120dp"
+        android:stretchMode="columnWidth"
+        ></GridView>
+    <TextView
+        android:id="@+id/tv_center_index_leter"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="100sp"/>
+    <LinearLayout
+        android:layout_gravity="right"
+        android:id="@+id/ll_ringt_leter_index"
+        android:gravity="right"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        android:alpha="0.3"
+        android:layout_width="30dp"
+        android:layout_height="match_parent">
+    </LinearLayout>
+</FrameLayout>

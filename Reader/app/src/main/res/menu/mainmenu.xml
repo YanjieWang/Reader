@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+     <item
+         android:id="@+id/action_refresh"
+         android:orderInCategory="100"
+         app:showAsAction="always"
+         android:icon="@drawable/draw_search_40"
+         android:title="Refresh"/>
+    <item
+        android:id="@+id/action_settings"
+         android:title="Settings">
+     </item>
+ </menu>

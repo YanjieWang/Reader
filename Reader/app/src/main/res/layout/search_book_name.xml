@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffffff">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/et_keyword"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:textSize="14sp"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/btn_search_searchbook"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:text="书名搜索"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_hint_searchbook"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:background="#ff00ff00"
+            android:layout_height="100dp">
+            <Button
+                android:id="@+id/btn_refresh_searchbook"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="刷新提示"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv1_searchbook"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="三国"/>
+                <TextView
+                    android:id="@+id/tv2_searchbook"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="修真"/>
+                <TextView
+                    android:id="@+id/tv3_searchbook"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="江湖"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <ListView
+            android:id="@+id/lv_book"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+        </ListView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/ll_botom"
+        android:layout_width="match_parent"
+        android:layout_gravity="center|bottom"
+        android:layout_height="40dp"
+        android:visibility="invisible"
+        android:gravity="bottom|center">
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:id="@+id/iv_botom"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/refresh_32x32"
+            android:scaleType="fitXY"
+            android:clickable="false"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:gravity="center|bottom"
+            android:id="@+id/tv_botom"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:clickable="false"
+            android:text="正在加载"
+            android:textSize="18sp"/>
+    </LinearLayout>
+</FrameLayout>

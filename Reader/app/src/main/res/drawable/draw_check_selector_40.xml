@@ -1,0 +1,4 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true" android:drawable="@drawable/draw_unchecked_40"/>
+    <item android:drawable="@drawable/draw_checked_40"/>
+</selector>
